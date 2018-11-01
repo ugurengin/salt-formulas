@@ -1,0 +1,20 @@
+consul:
+  version: 1.0.2
+  download_host: releases.hashicorp.com
+  hash: 418329f0f4fc3f18ef08674537b576e57df3f3026f258794b4b4b611beae6c9b
+
+  user: consul
+  group: consul
+
+  config:
+    client:
+      data_dir: /opt/consul/data
+      datacenter: "dc1"
+      log_level: WARN
+      encrypt: ""
+      enable_syslog: true
+      retry_join: []
+      rejoin_after_leave: true
+      leave_on_terminate: false
+      node_name: ""
+      advertise_addr: ""
